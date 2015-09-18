@@ -1,10 +1,9 @@
-SELECT P.Name, SUM(T.TrackId), T.PlaylistId
+SELECT P.Name, COUNT(T.TrackId)
 FROM Playlist P
 JOIN PlaylistTrack T
 ON P.PlaylistId == T.PlaylistId
---SUM + 15400117
+GROUP BY P.Name
 
-/*SELECT SUM(PlaylistTrack.TrackId) FROM Playlist, PlaylistTrack; --277202106 ? */
 
 
 
