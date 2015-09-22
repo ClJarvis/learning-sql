@@ -1,4 +1,4 @@
-SELECT I.Total, I.CustomerId, I.BillingCountry, E.FirstName, E.LastName
+SELECT I.Total, I.BillingCountry, E.FirstName, E.LastName
 FROM Invoice I
 JOIN Customer C
 ON C.CustomerId  == I.CustomerId
